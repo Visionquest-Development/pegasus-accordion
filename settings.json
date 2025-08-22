@@ -1,0 +1,38 @@
+{
+  "rows": [
+    {
+      "section_name": "Popup Settings",
+      "rows": [
+        {
+          "name": "Class",
+          "attribute": "class",
+          "options": "Any class name",
+          "description": "Add a class to the popup container",
+          "example": "class=\"test\""
+        },
+        {
+          "name": "Type",
+          "attribute": "type",
+          "options": "inline, gallery, html, image, video, iframe",
+          "description": "Type of popup to display",
+          "example": "type=\"gallery\""
+        },
+        {
+          "name": "Text",
+          "attribute": "text",
+          "options": "Learn More, etc.",
+          "description": "Button text",
+          "example": "text=\"More...\""
+        },
+        {
+          "name": "Caption",
+          "attribute": "caption",
+          "options": "This is a hippo.",
+          "description": "Caption text",
+          "example": "caption=\"This is the caption.\""
+        }
+
+      ]
+    }
+  ]
+}

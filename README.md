@@ -1,27 +1,27 @@
-# Pegasus-tabs
+# Pegasus-accordion
  
 ## Usage
 How to use in your WordPress site<br>
-`[tabs][tab class="first" title="Home"]Vivamus suscipit tortor eget felis porttitor volutpat. [/tab][tab class="second" title="Profile"]Pellentesque in ipsum id orci porta dapibus. [/tab][/tabs]`<br>
-Shortcode Attributes: http://pegasustheme.com/pegasus-tabs/
+`[accordions][accordion class="first" title="Home"]Vivamus suscipit tortor eget felis porttitor volutpat. [/accordion][accordion class="second" title="Profile"]Pellentesque in ipsum id orci porta dapibus. [/accordion][/accordions]`<br>
+Shortcode Attributes: http://pegasustheme.com/pegasus-accordion/
 
 
 ## Installation
 How to install to your WordPress site
 
 ### Simple Instructions 
-Go to [Github](https://github.com/Visionquest-Development/pegasus-tabs "Github") and click "Clone or download" and make sure it says "Clone with HTTPS" at the top and click "Download Zip" and save it to a folder on your PC. Then, go to WordPress Back-end and go to Plugins -> Add New and then click on "Upload Plugin" and upload the zip file you downloaded from Github.
+Go to [Github](https://github.com/Visionquest-Development/pegasus-accordion "Github") and click "Clone or download" and make sure it says "Clone with HTTPS" at the top and click "Download Zip" and save it to a folder on your PC. Then, go to WordPress Back-end and go to Plugins -> Add New and then click on "Upload Plugin" and upload the zip file you downloaded from Github.
 
 ### Advanced Setup 
 #### 1.) Upload via FTP/WordPress Admin<br>
-Download zip file from [here](https://github.com/Visionquest-Development/pegasus-tabs/archive/master.zip "Github") and on extraction make sure the folder name you extract to is saved as pegasus-tabs instead of pegasus-tabs-master
+Download zip file from [here](https://github.com/Visionquest-Development/pegasus-accordion/archive/master.zip "Github") and on extraction make sure the folder name you extract to is saved as pegasus-accordion instead of pegasus-accordion-master
 Then upload to you server using an FTP program or Use the WordPress Plugin Upload feature in the WordPress Admin.<br>
 #### 2.) In the terminal:
 ###### For https connection use:
-`git clone https://github.com/Visionquest-Development/pegasus-tabs.git pegasus-tabs`
+`git clone https://github.com/Visionquest-Development/pegasus-accordion.git pegasus-accordion`
 
 ###### For SSH implementation use this command and make sure you have the SSH key setup on both your terminal and github account. You will need to use your passkey for each update.
-`git clone git@github.com:Visionquest-Development/pegasus-tabs.git pegasus-tabs`
+`git clone git@github.com:Visionquest-Development/pegasus-accordion.git pegasus-accordion`
 
 
 
