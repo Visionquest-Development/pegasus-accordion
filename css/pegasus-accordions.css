@@ -1,14 +1,14 @@
-.accordion .accordion-item {
+.pegasus-accordion .accordion-item {
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1px solid black;
   border-radius: unset;
 }
- .accordion .accordion-item button[aria-expanded='true'] {
+ .pegasus-accordion .accordion-item button[aria-expanded='true'] {
 	 /* border-bottom: 1px solid #03b5d2; */
 }
- .accordion button {
+ .pegasus-accordion button {
 	 position: relative;
 	 display: block;
 	 text-align: left;
@@ -21,19 +21,19 @@
 	 background: none;
 	 outline: none;
 }
- .accordion button:hover, .accordion button:focus {
+ .pegasus-accordion button:hover, .pegasus-accordion button:focus {
 	 cursor: pointer;
 	 color: #0f2d52;
 }
- .accordion button:hover::after, .accordion button:focus::after {
+ .pegasus-accordion button:hover::after, .pegasus-accordion button:focus::after {
 	 cursor: pointer;
 	 color: #0f2d52;
 	 border: 1px solid #0f2d52;
 }
- .accordion button .accordion-title {
+ .pegasus-accordion button .accordion-title {
 	 padding: 1em 1.5em 1em 0;
 }
- .accordion button .icon {
+ .pegasus-accordion button .icon {
 	 display: inline-block;
 	 position: absolute;
 	 top: 18px;
@@ -43,7 +43,7 @@
 	 border: 1px solid;
 	 border-radius: 22px;
 }
- .accordion button .icon::before {
+ .pegasus-accordion button .icon::before {
 	 display: block;
 	 position: absolute;
 	 content: '';
@@ -53,7 +53,7 @@
 	 height: 2px;
 	 background: currentColor;
 }
- .accordion button .icon::after {
+ .pegasus-accordion button .icon::after {
 	 display: block;
 	 position: absolute;
 	 content: '';
@@ -63,27 +63,27 @@
 	 height: 10px;
 	 background: currentColor;
 }
- .accordion button[aria-expanded='true'] {
+ .pegasus-accordion button[aria-expanded='true'] {
 	 color: #0f2d52;
    font-weight: bold;
 }
- .accordion button[aria-expanded='true'] .icon::after {
+ .pegasus-accordion button[aria-expanded='true'] .icon::after {
 	 width: 0;
 }
- .accordion button[aria-expanded='true'] + .accordion-content {
+ .pegasus-accordion button[aria-expanded='true'] + .accordion-content {
 	 opacity: 1;
 	 max-height: 100%;
 	 transition: all 200ms linear;
 	 will-change: opacity, max-height;
 }
- .accordion .accordion-content {
+ .pegasus-accordion .accordion-content {
 	 opacity: 0;
 	 max-height: 0;
 	 overflow: hidden;
 	 transition: opacity 200ms linear, max-height 200ms linear;
 	 will-change: opacity, max-height;
 }
- .accordion .accordion-content p {
+ .pegasus-accordion .accordion-content p {
 	 font-size: 1rem;
 	 font-weight: 300;
 	 margin: 2em 0;
