@@ -231,7 +231,7 @@ Domain Path: /languages
 			}
 
 			function accordions_wrap( $args, $content = null ) {
-				$output = '<div class="accordion">' . do_shortcode($content);
+				$output = '<div class="pegasus-accordion">' . do_shortcode($content);
 
 
 				$output .= $this->_accordions_divs;
