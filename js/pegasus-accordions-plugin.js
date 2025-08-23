@@ -3,7 +3,7 @@
 (function () {
 	'use strict';
 
-	const items = document.querySelectorAll(".accordion button");
+	const items = document.querySelectorAll(".pegasus-accordion button");
 
 	function toggleAccordion() {
 	  const itemToggle = this.getAttribute('aria-expanded');
@@ -19,4 +19,5 @@
 
 	items.forEach(item => item.addEventListener('click', toggleAccordion));
 	
+
 })();
