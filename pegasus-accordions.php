@@ -200,20 +200,19 @@ Domain Path: /languages
 
 	function pegasus_accordions_plugin_styles() {
 
-		wp_register_style( 'pegasus-accordions-css', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'css/pegasus-accordions.css', array(), null, 'all' );
+		wp_register_style(  'pegasus-accordions-css',       trailingslashit( plugin_dir_url( __FILE__ ) ) . 'css/pegasus-accordions.css',       array(),            null, 'all' );
+		wp_register_script( 'pegasus-accordions-plugin-js', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'js/pegasus-accordions-plugin.js', array( 'jquery' ), null, true );
+
+		if ( is_singular() ) {
+			global $post;
+			if ( $post && ( has_shortcode( $post->post_content, 'accordions' ) || has_shortcode( $post->post_content, 'accordion' ) ) ) {
+				wp_enqueue_style(  'pegasus-accordions-css' );
+				wp_enqueue_script( 'pegasus-accordions-plugin-js' );
+			}
+		}
 
 	}
 	add_action( 'wp_enqueue_scripts', 'pegasus_accordions_plugin_styles' );
-
-	/**
-	* Proper way to enqueue JS
-	*/
-	function pegasus_accordions_plugin_js() {
-
-		wp_register_script( 'pegasus-accordions-plugin-js', trailingslashit( plugin_dir_url( __FILE__ ) ) . 'js/pegasus-accordions-plugin.js', array( 'jquery' ), null, 'all' );
-
-	} //end function
-	add_action( 'wp_enqueue_scripts', 'pegasus_accordions_plugin_js' );
 
 	/**
 	* accordions Short Code
@@ -237,10 +236,6 @@ Domain Path: /languages
 				$output .= $this->_accordions_divs;
 
 				$output .= '</div>'; //end pegasus-Accordions
-
-
-				wp_enqueue_style( 'pegasus-accordions-css' );
-				wp_enqueue_script( 'pegasus-accordions-plugin-js' );
 
 				return $output;
 			}
